@@ -1,0 +1,21 @@
+.allComponents {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding: .8rem;
+  /* background: url('../assets'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media(max-width: 1464px){ 
+    .allComponents {
+      width: 1030px;
+    }
+}
+
+@media(max-width: 1024px){ 
+  .allComponents {
+      width: 96%;
+  }
+}

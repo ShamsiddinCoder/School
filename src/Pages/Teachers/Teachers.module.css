@@ -1,0 +1,31 @@
+.teachers {
+    width: 89%;
+    height: 80%;
+    border: solid 1px #ccc;
+    margin-left: 2rem;
+    padding: .6rem;
+    overflow-y: auto;
+    margin-top: 2.6rem;
+}
+
+.teachers .teacherInner {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 1024px){
+    .teachers {
+        width: 98%;
+        margin-left: .6rem;
+        padding: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .teachers {
+        margin-top: 0;
+        height: 82vh;
+    }
+}

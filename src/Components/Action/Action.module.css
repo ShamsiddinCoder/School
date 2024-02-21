@@ -1,0 +1,73 @@
+.actions {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.actions p {
+    font-size: 15.71px;
+    font-weight: 700;
+    font-family: 'Nunito';
+    color: var(--text-black);
+}
+
+.actions .toggle {
+    margin: 0 16px;
+    position: relative;
+    width: 90.35px;
+    height: 30px;
+    background: linear-gradient(0deg, #FFFFFF, #CAD9FF);
+    box-shadow: inset 0px 0px 6.28572px #5599FF;
+    filter: drop-shadow(0px 0px 7.85714px rgba(0, 0, 0, 0.15));
+    border-radius: 31.4286px;
+    border-top: solid 1px #ececec;
+    border-bottom: solid 1px #ececec;
+    cursor: pointer;
+}
+
+.actions .toggle .toggleInner {
+    position: absolute;
+    top: 1px;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #fff;
+    border-radius: 50px;
+    background: linear-gradient(0deg, #FFFFFF, #CAD9FF);
+    border: solid 1px #5699FF;
+    transition: .4s ease;
+}
+
+.actionMini {
+    display: none;
+}
+
+
+@media(max-width: 1024px){
+    .actions p {
+        font-size: 13px;
+    }
+    .actions .toggle {
+        width: 66px;
+        height: 24px;
+        margin: 0 4px;
+    }
+    .actions .toggle .toggleInner {
+        height: 1.3rem;
+    }
+}
+
+@media(max-width: 890px){
+    .actions {
+        display: none;
+    }
+    .actionMini {
+        display: block;
+        margin: 0 1rem;
+    }
+}
+
+@media(max-width: 544px) {
+    .actionMini {
+        margin: 0 .4rem;
+    }
+}

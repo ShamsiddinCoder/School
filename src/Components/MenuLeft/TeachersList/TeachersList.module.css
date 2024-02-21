@@ -1,0 +1,38 @@
+a .techerList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: .8rem;
+}
+
+a .techerList img {
+    width: 28px;
+}
+
+a .techerList p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 1rem;
+    color: var(--text-black);
+}
+
+
+@media(max-width: 1024px){
+    a .techerList img {
+        width: 22px;
+    }
+    a .techerList p {
+        font-size: 14px;
+        margin-left: .6rem;
+    }
+}
+
+@media(max-width: 768px) {
+    a .techerList img {
+        width: 18px;
+    }
+    a .techerList p {
+        font-size: 12px;
+    }
+}

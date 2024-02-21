@@ -1,0 +1,242 @@
+.teacherInfo {
+    height: 100%;
+    border: solid 2px #ccc;
+    margin-left: 6rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.teacherInfo .teacherInfoInner {
+    width: 60%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.teacherInfo .teacherInfoInner .teacherInformFoto {
+    width: 138px;
+    height: 130px;
+    border-radius: 50%;
+    border: solid 2px #ccc;
+    margin-right: 2rem;
+    overflow: hidden;
+}
+
+.teacherInfo .teacherInfoInner .teacherInformFoto img {
+    width: 100%;
+}
+
+.teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner {
+    width: 23.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 1.2rem;
+}
+
+.teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 12px;
+    width: 381px;
+    background: var(--color-after);
+}
+
+.teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner h3 {
+    font-size: 40px;
+    color: var(--text-black);
+    font-weight: 700;
+}
+
+.teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner svg {
+    font-size: 2rem;
+}
+
+.teacherInfo .teacherInfoInner .teacherInformText p {
+    font-size: 20px;
+    color: var(--text-black);
+    font-weight: 700;
+}
+
+.teacherInfo .teacherInfoTable {
+    width: 913px;
+    /* height: var(--height-table); */
+    border: solid 2.5px var(--text-black);
+    border-radius: .6rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.teacherInfo .teacherInfoButton {
+    width: 91%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.teacherInfo .teacherInfoButton button {
+    width: 228px;
+    height: 60px;
+    background: #74BBFA;
+    color: var(--text-black);
+    border-radius: 13px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+@media(max-width: 1464px){
+    .teacherInfo {
+        margin-left: 2rem;
+    }
+    .teacherInfo .teacherInfoInner {
+        width: 100%;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner {
+        width: 18rem;
+        margin-bottom: .8rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner::after {
+        width: 100%;
+        height: 8px;
+    }   
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner h3 {
+        font-size: 30px;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner svg {
+        font-size: 1.4rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText p {
+        font-size: 14px;
+    }
+    .teacherInfo .teacherInfoTable {
+        width: 90%;
+        margin-bottom: .6rem;
+    }
+    .teacherInfo .teacherInfoButton button {
+        width: 122px;
+        height: 38px;
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 1024px){
+    .teacherInfo .teacherInfoInner {
+        margin-bottom: .8rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformFoto {
+        width: 108px;
+        height: 106px;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner {
+        width: 14rem;
+        margin-bottom: .6rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner::after {
+        width: 100%;
+        height: 4px;
+    }   
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner h3 {
+        font-size: 22px;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner svg {
+        font-size: 1.2rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText p {
+        font-size: 10px;
+    }
+    .teacherInfo .teacherInfoButton {
+        margin-top: .2rem;
+    }
+    .teacherInfo .teacherInfoButton button {
+        width: 112px;
+        height: 32px;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+}
+
+@media(max-width: 768px){
+    .teacherInfo {
+        margin-left: 1rem;
+    }
+    .teacherInfo .teacherInfoInner {
+        height: 106px;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformFoto {
+        width: 116px;
+        height: 108px;
+        margin-right: 1rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner {
+        width: 12rem;
+        margin-bottom: .6rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner::after {
+        width: 100%;
+        height: 3px;
+    }   
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner h3 {
+        font-size: 18px;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner svg {
+        font-size: 1rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText p {
+        font-size: 10px;
+    }
+    .teacherInfo .teacherInfoTable {
+        width: 100%;
+        margin-top: 0rem;
+    }
+    .teacherInfo .teacherInfoButton {
+        margin-top: 0rem;
+    }
+    .teacherInfo .teacherInfoButton button {
+        width: 122px;
+        height: 38px;
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 672px){
+    .teacherInfo {
+        margin-left: .4rem;
+        justify-content: flex-start;
+    }
+    .teacherInfo .teacherInfoInner {
+        height: 96px;
+        margin-top: 1rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformFoto {
+        width: 88px;
+        height: 80px;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner {
+        width: 9rem;
+        margin-bottom: .6rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner::after {
+        height: 4px;
+    }   
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner h3 {
+        font-size: 13px;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText .teacherInformTextInner svg {
+        font-size: .8rem;
+    }
+    .teacherInfo .teacherInfoInner .teacherInformText p {
+        font-size: 7px;
+    }
+    .teacherInfo .teacherInfoButton button {
+        width: 113px;
+        height: 32px;
+        font-size: 15px;
+    }
+}

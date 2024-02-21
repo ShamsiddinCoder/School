@@ -1,0 +1,212 @@
+header {
+    width: 100%;
+    height: 16%;
+}
+
+.headers {
+    width: 100%;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2.2rem;
+    background: linear-gradient(90.22deg, #5CB2FA -3.26%, rgba(0, 26, 255, 0) 185.01%);
+    border: 0.5px solid #000000;
+    filter: drop-shadow(5px 11px 10px rgba(0, 0, 0, 0.25));
+    border-radius: 17px;
+}
+
+.headers .headerInner {
+    display: flex;
+    align-items: center; 
+    height: 100%;
+}
+
+.headers .headerInner .headerLogoText { 
+    display: flex;
+    align-items: center;
+    margin-left: 6rem;
+    cursor: pointer;
+}
+
+.headers .headerInner .headerLogoText img {
+    width: 44px;
+    margin-right: 1rem;
+}
+
+.headers .headerInner .headerLogoText p {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: -10px;
+    color: #000000;
+}
+
+.headers .headerInner .headerMenu {
+    width: 196px;
+    height: 100%;
+    background: #71bdfb;
+    background-blend-mode: overlay;
+    filter: drop-shadow(62px 1px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 23px;
+}
+
+.headers .headerInner .headerMenu img {
+    height: 100%;
+    cursor: pointer;
+}
+
+
+/* nav Styles start */
+
+.headers nav {
+    display: flex;
+    align-items: center;
+}
+
+.headers nav .navInner {
+    display: flex;
+    align-items: center;
+}
+
+.headers nav .navInner .selecInner {
+    display: none;
+}
+
+.headers nav .navInner select {
+    width: 141px;
+    height: 25px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-black);
+    background: #D9D9D9;
+    text-align: center;
+}
+
+.headers nav > img {
+    height: 62px;
+}
+/* nav Styles end */
+
+
+@media(max-width: 1464px){
+    .headers .headerInner .headerLogoText {
+        margin-left: 1.4rem;
+    }
+    .headers .headerInner .headerLogoText img {
+        width: 32px;
+    }
+    .headers .headerInner .headerLogoText p {
+        font-size: 24px;
+    }
+    .headers .headerInner .headerMenu {
+        width: 152px;
+        height: 72px;
+    }
+    .headers nav {
+        height: 100%;
+    }
+    .headers nav .navInner select {
+        width: 80px;
+        font-size: 12px;
+    }
+    .headers nav > img {
+        height: 86%;
+    }
+}
+
+@media(max-width: 1024px){
+    header {
+        height: 10%;
+    }
+    .headers {
+        height: 48px;
+    }
+    .headers .headerInner .headerMenu {
+        width: 96px;
+        height: 45px;
+        filter: drop-shadow(34px 1px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 17px;
+    }
+    .headers .headerInner .headerLogoText {
+        margin-left: .8rem;
+    }
+    .headers .headerInner .headerLogoText img {
+        width: 30px;
+    }
+    .headers .headerInner .headerLogoText p {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 768px){
+    .headers .headerInner .headerMenu {
+        width: 100px;
+    }
+    .headers .headerInner .headerLogoText {
+        margin-left: .8rem;
+    }
+    .headers .headerInner .headerLogoText img {
+        width: 26px;
+        margin-right: .6rem;
+    }
+    .headers .headerInner .headerLogoText p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 672px){
+    .headers {
+        padding-right: .8rem;
+    }
+    .headers .headerInner .headerMenu {
+        width: 76px;
+        filter: drop-shadow(20px 1px 4px rgba(0, 0, 0, 0.25));
+    }
+    .headers .headerInner .headerLogoText {
+        margin-left: 1rem;
+    }
+    .headers .headerInner .headerLogoText img {
+        width: 22px;
+    }
+    .headers .headerInner .headerLogoText p {
+        font-size: 16px;
+    }
+    .headers nav .navInner select {
+        width: 60px;
+        font-size: 9px;
+    }
+}
+
+@media(max-width: 544px){
+    .headers {
+        padding-right: .4rem;
+    }
+    .headers .headerInner .headerMenu {
+        width: 70px;
+    }
+    .headers .headerInner .headerLogoText {
+        margin-left: .6rem;
+    }
+    .headers .headerInner .headerLogoText img {
+        width: 20px;
+        margin-right: .4rem;
+    } 
+    .headers .headerInner .headerLogoText p {
+        font-size: 14px;
+    }
+    .headers nav .navInner {
+        flex-flow: column;
+        margin: 0 5px;
+    }
+    .headers nav .navInner select {
+        display: none;
+    }
+    .headers nav .navInner .selecInner {
+        display: block;
+        width: 37px;
+        height: 17px;
+        font-size: 9px;
+        margin-bottom: 4px;
+    }
+}

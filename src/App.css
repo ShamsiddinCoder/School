@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@1,200&display=swap');
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --text-black: #000;
+  --text-white: #fff;
+  --text-green: #C7C7C7;
+  --text-not-black-blue: 
+  #2C4176;
+  --color-btn: #050284;
+  --color-second-btn: #74BBFA;
+  --color-after: #5DB3FA;
+
+  --height-table: 413px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: #54617B;
+  padding: 1rem 0;
+}
+
+.App.dark {
+  --text-black: #fff;
+}
+
+input, button, select {
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+@media(max-width: 1464px){
+  :root {
+    --height-table: 230px;
+  }
+}
+
+@media(max-width: 1440px){
+  :root {
+    --height-table: 205px;
+  }
+}
+
+@media(max-width: 1024px){
+  :root {
+    --height-table: 198px;
+  }
+}
+
+@media(max-width: 672px){
+  :root {
+    --height-table: 160px;
+  }
+}
